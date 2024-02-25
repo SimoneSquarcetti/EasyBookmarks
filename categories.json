@@ -1,0 +1,26 @@
+   
+   // ARRAY DI CATEGORIE E SOTTOCATEGORIE 
+   
+    [
+        {
+            "name":"name-category1",  // NOME DELLA CATEGORIA 
+            "urls":["url1", "url2", "url3"],  // ARRAY URLS DEI BOOKMARKS DELLA CATEGORIA 
+            "subcategories":["subcategory1", "subcategory2", "subcategory3"] // ARRAY SOTTOCATEGORIE DELLA CATEGORIA 
+        },
+
+        {
+            "name":"name-category2",
+            "urls":["url1", "url2", "url3"],
+            "subcategories":["subcategory1", "subcategory2", "subcategory3"]
+        },
+
+        {
+            "name":"name-category3",
+            "urls":["url1", "url2", "url3"],
+            "subcategories":["subcategory1", "subcategory2", "subcategory3"]
+        }
+
+        // ... 
+
+    ]
+     

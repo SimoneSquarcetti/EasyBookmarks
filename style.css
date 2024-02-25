@@ -1,0 +1,131 @@
+
+
+#top {
+    display: flex;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: space-around;
+   }
+
+
+
+.sup {
+    text-align: center;
+    display: flex;
+}
+
+#sbookmarks2{
+    display: none;
+}
+
+#search-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+#title {
+    text-align: center;
+    font-family: 'Georgia', Times, serif;
+    font-size:160%;
+    color: midnightblue; 
+}
+
+.sbox {
+    font-family: 'Georgia', Times, serif;
+}
+
+
+       
+/*.sbox {       per stondare le barre di ricerca
+    border: 0;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius:8px;
+    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75) inset;
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75) inset;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75) inset;
+
+} */
+
+#horizontal {
+    margin-bottom: 2%;
+}
+
+#contentDiv{
+    margin: 2%;
+}
+
+.categoryDiv {
+    border: 1px solid #ccc;
+    padding: 1%;
+    width: 13.5%; /* Personalizza la larghezza del riquadro a tuo piacimento */
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;    
+    min-width: 250px;
+    /*background-color: gainsboro;*/
+    
+  }
+
+.CatName {
+    text-align: center;
+    color: midnightblue; 
+    font-family: 'Georgia', Times, serif;
+    font-size: 120%;
+}
+
+
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+.list-icon{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+ @media screen and (max-width:900px) {
+    #sbookmarks1{
+        display: none;
+    }
+     #sbookmarks2{
+        display: flex;
+    }
+
+    #top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+       #search-bar{
+       width: 100%;
+    }
+    
+ }       
+ @media screen and (max-width:500px) {
+    #search-bar{
+        flex-direction: column;
+        align-items: center;
+    }
+    #sbookmarks2{
+        margin-bottom: 10px;
+    }
+    #title {
+        font-size: 110%;
+    }
+ }  
+
+
+
