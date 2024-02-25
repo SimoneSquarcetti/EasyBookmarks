@@ -1,44 +1,37 @@
-
-
 #top {
-    display: flex;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
-    align-items: center;
-    justify-content: space-around;
-   }
-
-
+  display: flex;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: space-around;
+}
 
 .sup {
-    text-align: center;
-    display: flex;
+  text-align: center;
+  display: flex;
 }
 
-#sbookmarks2{
-    display: none;
+#sbookmarks2 {
+  display: none;
 }
 
-#search-bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
+#search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 #title {
-    text-align: center;
-    font-family: 'Georgia', Times, serif;
-    font-size:160%;
-    color: midnightblue; 
+  text-align: center;
+  font-family: "Georgia", Times, serif;
+  font-size: 160%;
+  color: midnightblue;
 }
 
 .sbox {
-    font-family: 'Georgia', Times, serif;
+  font-family: "Georgia", Times, serif;
 }
 
-
-       
 /*.sbox {       per stondare le barre di ricerca
     border: 0;
     -moz-border-radius: 8px;
@@ -51,81 +44,87 @@
 } */
 
 #horizontal {
-    margin-bottom: 2%;
+  margin-bottom: 2%;
 }
 
-#contentDiv{
+#contentDiv {    
     margin: 2%;
+    display: flex;
+    /*flex-direction: row-reverse;
+    justify-content: flex-end;*/
+    flex-wrap: wrap;
 }
 
 .categoryDiv {
-    border: 1px solid #ccc;
-    padding: 1%;
-    width: 13.5%; /* Personalizza la larghezza del riquadro a tuo piacimento */
-    display: inline-block;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 2%;    
-    min-width: 250px;
-    /*background-color: gainsboro;*/
-    
-  }
+  border: 1px solid #ccc;
+  padding: 1%;
+  width: 13.5%; /* Personalizza la larghezza del riquadro a tuo piacimento */
+  display: inline-block;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  min-width: 250px;
+  height: 350px;
+  /*background-color: gainsboro;*/
+}
+
+#addCategory {
+  font-size: 300%;
+}
+#addCategoryDiv {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .CatName {
-    text-align: center;
-    color: midnightblue; 
-    font-family: 'Georgia', Times, serif;
-    font-size: 120%;
+  text-align: center;
+  color: midnightblue;
+  font-family: "Georgia", Times, serif;
+  font-size: 120%;
 }
 
-
-
-ul{
-    list-style-type: none;
-    padding: 0;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-li{
+li {
+  margin-bottom: 10px;
+}
+
+.list-icon {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  #sbookmarks1 {
+    display: none;
+  }
+  #sbookmarks2 {
+    display: flex;
+  }
+
+  #top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #search-bar {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #search-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+  #sbookmarks2 {
     margin-bottom: 10px;
+  }
+  #title {
+    font-size: 110%;
+  }
 }
-
-.list-icon{
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-
-
- @media screen and (max-width:900px) {
-    #sbookmarks1{
-        display: none;
-    }
-     #sbookmarks2{
-        display: flex;
-    }
-
-    #top {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-       }
-       #search-bar{
-       width: 100%;
-    }
-    
- }       
- @media screen and (max-width:500px) {
-    #search-bar{
-        flex-direction: column;
-        align-items: center;
-    }
-    #sbookmarks2{
-        margin-bottom: 10px;
-    }
-    #title {
-        font-size: 110%;
-    }
- }  
-
-
-
