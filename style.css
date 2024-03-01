@@ -1,3 +1,9 @@
+body {
+  background-color: #f0f0f0; /* Sostituisci con il colore desiderato */
+  margin: 0; /* Rimuove il margine predefinito */
+  padding: 0; /* Rimuove il padding predefinito */
+}
+
 #top {
   display: flex;
   text-align: center;
@@ -32,31 +38,53 @@
   font-family: "Georgia", Times, serif;
 }
 
-/*.sbox {       per stondare le barre di ricerca
-    border: 0;
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    border-radius:8px;
-    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75) inset;
-    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75) inset;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75) inset;
+.sbox {
+  border: 0;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -moz-box-shadow: 1px 1px 2px rgb(25, 25, 112) inset;
+  -webkit-box-shadow: 1px 1px 2px rgb(25, 25, 112) inset;
+  box-shadow: 1px 1px 2px rgb(25, 25, 112) inset;
+}
 
-} */
+i {
+  cursor: pointer;
+}
 
 #horizontal {
   margin-bottom: 2%;
 }
 
-#contentDiv {    
-    margin: 2%;
-    display: flex;
-    /*flex-direction: row-reverse;
+#contentDiv {
+  margin: 2%;
+  display: flex;
+  /*flex-direction: row-reverse;
     justify-content: flex-end;*/
-    flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.divUrlSub {
+  display: none;
+
+  margin-left: 10%;
+}
+
+.liDiv {
+  display: flex;
+  align-items: flex-start;
+  color: midnightblue;
+  margin-left: 5%;
+}
+.headerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: midnightblue;
 }
 
 .categoryDiv {
-  border: 1px solid #ccc;
+  border: 1px solid #00004c;
   padding: 1%;
   width: 13.5%; /* Personalizza la larghezza del riquadro a tuo piacimento */
   display: inline-block;
@@ -70,12 +98,17 @@
 
 #addCategory {
   font-size: 300%;
+  color: midnightblue;
 }
 #addCategoryDiv {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.buttonDiv {
+  color: midnightblue;
 }
 
 .CatName {
@@ -127,4 +160,58 @@ li {
   #title {
     font-size: 110%;
   }
+}
+
+/* per cambiare il colore del placeholder delle barre di ricerca*/
+::-webkit-input-placeholder {
+  /* WebKit browsers (Safari, Google Chrome, Opera 15+) */
+  color: midnightblue;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: midnightblue;
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: midnightblue;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: midnightblue;
+}
+
+#finestraInput {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+#inputUtente {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#confermaButton {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#confermaButton:hover {
+  background-color: #45a049;
 }
