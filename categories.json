@@ -1,11 +1,72 @@
 [
   {
     "name": "Sport",
-    "urls": [],
+    "urls": [
+      "https://www.diretta.it/",
+      "https://www.sportmediaset.mediaset.it/"
+    ],
     "subcategories": [
-      { "name": "SubCat", "urls": ["url1", "url2", "url3"] },
-      { "name": "Nuova", "urls": [] }
+      {
+        "name": "Calcio",
+        "urls": [
+          "https://www.tuttocampo.it/Homepage",
+          "https://www.legaseriea.it/it"
+        ]
+      },
+      { "name": "Pallavolo", "urls": ["https://www.legavolley.it/"] },
+      { "name": "Basket", "urls": ["https://www.legabasket.it/"] }
     ]
   },
-  { "name": "Hobby", "urls": [], "subcategories": [] }
+  {
+    "name": "Shopping",
+    "urls": [
+      "https://www.amazon.it/?tag=admarketpla0c-21&ref=pd_sl_3ab565bb278a3dee3e9761bb171d0048a18dcba9019a19a80d341954&mfadid=adm",
+      "https://www.alibaba.com/?src=sem_ggl&field=UG&from=sem_ggl&cmpgn=9922923043&adgrp=97780318062&fditm=&tgt=kwd-14739453&locintrst=&locphyscl=9053442&mtchtyp=e&ntwrk=g&device=c&dvcmdl=&creative=598873836201&plcmnt=&plcmntcat=&aceid=&position=&gad_source=1&gclid=EAIaIQobChMIm53E7tDuhAMVdg8GAB1AnAhYEAAYASAAEgJXpvD_BwE"
+    ],
+    "subcategories": [
+      {
+        "name": "Sportivo",
+        "urls": [
+          "https://www.nike.com/it/?cp=49474584967_search_1710154405300700000&mfadid=adm",
+          "https://www.adidas.it/"
+        ]
+      },
+      {
+        "name": "Elegante",
+        "urls": [
+          "https://www.tagliatore.com/man/",
+          "https://m.shein.com/it/men"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Motori di Ricerca",
+    "urls": [
+      "https://www.google.it/?hl=it",
+      "https://it.search.yahoo.com/?fr2=p:fprd,mkt:it",
+      "https://www.bing.com/?cc=it"
+    ],
+    "subcategories": []
+  },
+  {
+    "name": "Social",
+    "urls": [
+      "https://www.youtube.com/",
+      "https://www.instagram.com/",
+      "https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fit-IT%2F&lang=en&enter_method=mandatory",
+      "https://twitter.com/i/flow/signup",
+      "https://www.facebook.com/"
+    ],
+    "subcategories": []
+  },
+  {
+    "name": "Università",
+    "urls": [
+      "https://www.unipg.it/",
+      "https://www.unipg.it/servizi/servizi-on-line/sol",
+      "https://unistudium.unipg.it/"
+    ],
+    "subcategories": [{ "name": "Tesi", "urls": [] }]
+  }
 ]

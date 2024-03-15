@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EasyBookmarks</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
   </head>
   <body>
+    <div id="row"></div>
     <div id="top">
       <div id="sbookmarks1" class="sup">
         <label for="search bookmark" class="searchbox"></label>
         <input
-          type="search"
+          type="text"
           id="searchbookmark"
           class="sbox"
           name="search bookmark"
           placeholder="Bookmark"
+          oninput="searchBookmark(value)"
         />
         <input type="submit" class="sub" value="Search" />
       </div>
@@ -33,22 +35,24 @@
         <div id="sbookmarks2" class="sup">
           <label for="search bookmark" class="searchbox"></label>
           <input
-            type="search"
+            type="text"
             id="searchbookmark"
             class="sbox"
             name="search bookmark"
             placeholder="Bookmark"
+            oninput="searchBookmark(value)"
           />
           <input type="submit" class="sub" value="Search" />
         </div>
         <div id="scategory" class="sup">
           <label for="search category" class="searchbox"></label>
           <input
-            type="search"
+            type="text"
             id="searchcategory"
             class="sbox"
             name="search category"
             placeholder="Category"
+            oninput="searchCategory(value)"
           />
           <input type="submit" class="sub" value="Search" />
         </div>
@@ -59,30 +63,26 @@
       <hr color="#191970" size="2px" />
     </div>
 
-    <div id="contentDiv">
-      <!--<div class="FirstRow">
-    <h2 class="CatName">Prima Categoria</h2>
-
-    <ul>
-      <li><a href="https://www.diretta.it/">Diretta.it</a><i class="fa-solid fa-bookmark"></i></li>
-      <li><a href="https://www.facebook.com/">Facebook</a></li>
-      <li>Bookmark 3</li>
-      <li>Bookmark 4</li>
-      <li>Bookmark 5</li>
-      <li>Bookmark 6</li>
-      <li>Bookmark 7</li>
-      <li>Bookmark 8</li>
-    </ul>
-  </div>-->
-      <div class="categoryDiv">
-        <div id="addCategoryDiv">
-          <i title = "Add Category" id="addCategory" class="material-symbols-outlined" onclick="openAddCategoryDialog()"> add_circle</i>
+      <div id="contentDiv">
+        <div class="categoryDiv">
+          <div id="addCategoryDiv">
+            <i
+              title="Add Category"
+              id="addCategory"
+              class="material-symbols-outlined"
+              onclick="openAddCategoryDialog()"
+            >
+              add_circle</i
+            >
+          </div>
         </div>
       </div>
+
+
+
+    <div>
+      <dialog id="dialogWindow">
+      </dialog>
     </div>
-
-   
-
-   
   </body>
 </html>

@@ -1,16 +1,28 @@
 body {
-  background-color: #f0f0f0; /* Sostituisci con il colore desiderato */
-  margin: 0; /* Rimuove il margine predefinito */
-  padding: 0; /* Rimuove il padding predefinito */
+  background-color: #f5faff;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size:14px;
+  background-color: #f3f3f3;
+}
+h1 {
+  margin: 0%;
+}
+#row{width: 100%;
+  height: 15px;
+  background-color: #5555a7;
 }
 
-#top {
+#top {  
   display: flex;
   text-align: center;
-  margin-top: 0;
+
   margin-bottom: 0;
   align-items: center;
   justify-content: space-around;
+  padding: 15px;
+  background-color: #e1e1e1;
 }
 
 .sup {
@@ -29,20 +41,16 @@ body {
 }
 #title {
   text-align: center;
-  font-family: "Georgia", Times, serif;
-  font-size: 160%;
+  font-size: 170%;
   color: midnightblue;
 }
 
-.sbox {
-  font-family: "Georgia", Times, serif;
-}
 
 .sbox {
   border: 0;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
   -moz-box-shadow: 1px 1px 2px rgb(25, 25, 112) inset;
   -webkit-box-shadow: 1px 1px 2px rgb(25, 25, 112) inset;
   box-shadow: 1px 1px 2px rgb(25, 25, 112) inset;
@@ -57,11 +65,7 @@ i {
 }
 
 #contentDiv {
-  margin: 2%;
-  display: flex;
-  /*flex-direction: row-reverse;
-    justify-content: flex-end;*/
-  flex-wrap: wrap;
+  display: ruby;
 }
 
 .divUrlSub {
@@ -70,30 +74,63 @@ i {
   margin-left: 10%;
 }
 
+#deleteUrlIcon {
+  font-size: 110%;
+  color: midnightblue;
+}
+
 .liDiv {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   color: midnightblue;
   margin-left: 5%;
 }
+.liDiv1 {
+  flex-wrap: nowrap;
+  text-wrap: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  width: calc(100% - 50px);
+}
 .headerDiv {
+  margin-top: 15px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   color: midnightblue;
 }
 
+.highlights {
+  background-color: #d5def5;
+}
+h3 {
+  margin: 0;
+
+}
+hr{
+  margin: 0;
+}
 .categoryDiv {
-  border: 1px solid #00004c;
   padding: 1%;
-  width: 13.5%; /* Personalizza la larghezza del riquadro a tuo piacimento */
+  padding-top: 0;
+  width: 13.5%;
   display: inline-block;
   margin-left: 2%;
   margin-right: 2%;
   margin-bottom: 2%;
-  min-width: 250px;
+  min-width: 260px;
   height: 350px;
-  /*background-color: gainsboro;*/
+  overflow: auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  font-size: 95%;
+  box-shadow: 5px 5px 10px midnightblue;
+}
+
+input{
+  padding-left: 5px;
 }
 
 #addCategory {
@@ -111,10 +148,13 @@ i {
   color: midnightblue;
 }
 
+#deleteSubcatIcon, #addUrlSubcatIcon {
+  font-size: 130%;
+}
+
 .CatName {
   text-align: center;
   color: midnightblue;
-  font-family: "Georgia", Times, serif;
   font-size: 120%;
 }
 
@@ -125,6 +165,36 @@ ul {
 
 li {
   margin-bottom: 10px;
+}
+
+.liUrlCat {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  display: block;
+  flex-wrap: nowrap;
+  text-wrap: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-decoration: none;
+  color: midnightblue;
+}
+
+#dialogWindow {
+  border-color: midnightblue;
+  background-color: #fafafa;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#labelSelection {
+  margin-bottom: 5%;
+  font-weight: bold;
+  color: midnightblue;
 }
 
 .list-icon {
@@ -162,37 +232,19 @@ li {
   }
 }
 
-/* per cambiare il colore del placeholder delle barre di ricerca*/
 ::-webkit-input-placeholder {
-  /* WebKit browsers (Safari, Google Chrome, Opera 15+) */
   color: midnightblue;
 }
 :-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
   color: midnightblue;
   opacity: 1;
 }
 ::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
   color: midnightblue;
   opacity: 1;
 }
 :-ms-input-placeholder {
-  /* Internet Explorer 10+ */
   color: midnightblue;
-}
-
-#finestraInput {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  z-index: 999;
 }
 
 #inputUtente {
@@ -214,4 +266,23 @@ li {
 
 #confermaButton:hover {
   background-color: #45a049;
+}
+
+.icon_img {
+  margin-right: 5px;
+}
+
+#dialogButtonsDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+.dialogButtons {
+  background-color: #c3baee;
+  border: 0px;
+  border-radius: 3px;
+  padding: 1% 2%;
+  margin: 0 5%;
+  cursor: pointer;
 }
