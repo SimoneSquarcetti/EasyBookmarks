@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EasyBookmarks</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script2.js"></script>
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
+    
     <div id="row"></div>
     <div id="top">
       <div id="sbookmarks1" class="sup">
@@ -61,28 +63,56 @@
 
     <div id="horizontal">
       <hr color="#191970" size="2px" />
+      <div id="importDiv">
+        <i
+          title="Import Bookmarks"
+          id="importIcon"
+          class="material-symbols-outlined"
+          onclick="openImportBookmarksDialog()"
+        >
+          upload
+        </i>
+      </div>
     </div>
 
-      <div id="contentDiv">
-        <div class="categoryDiv">
-          <div id="addCategoryDiv">
-            <i
-              title="Add Category"
-              id="addCategory"
-              class="material-symbols-outlined"
-              onclick="openAddCategoryDialog()"
-            >
-              add_circle</i
-            >
-          </div>
-        </div>
+    
+
+    <div id="contentDiv">
+      
+      <div class="categoryDiv" id="addCategoryDiv">
+        <i
+          title="Add Category"
+          id="addCategory"
+          class="material-symbols-outlined"
+          onclick="openAddCategoryDialog()"
+        >
+          add_circle</i
+        >
       </div>
-
-
+    </div>
 
     <div>
-      <dialog id="dialogWindow">
-      </dialog>
+      <dialog id="dialogWindow"></dialog>
     </div>
+
+    <div id="credits">
+      <div id="logo">
+        <img
+          src="file:///C:\Users\simos\Desktop\EasyBookmarks/logo.jpg"
+          alt="EasyBookmarks"
+          width="50px"
+        />
+      </div>
+      <div id="creditsText">
+        <p style="font-size: 80%">
+          Web application developed by Simone Squarcetti <br />
+          with the supervision of Prof. Luca Grilli
+        </p>
+      </div>
+    </div>
+
+    <script src="script2.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.0.3/pako.min.js"></script>
+
   </body>
 </html>
