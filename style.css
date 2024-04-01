@@ -1,3 +1,10 @@
+
+.liDiv div label{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 1% 0 0 5%
+}
+
 body {
   background-color: #f5faff;
   margin: 0;
@@ -229,6 +236,9 @@ input{
   padding-left: 5px;
   width: 95%;
   color: midnightblue;
+}
+#divDialogWindow div input{
+  width: auto;
 }
 
 .editInput {
