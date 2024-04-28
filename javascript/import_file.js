@@ -81,7 +81,7 @@ function openImportBookmarksDialog() {
     };
   }
   
-  async function compressFile(file) {
+async function compressFile(file) {
     return new Promise((resolve, reject) => {
         const reader = new FileReader();
   
@@ -100,7 +100,7 @@ function openImportBookmarksDialog() {
   }
   
   
-  async function uploadFile(file) {
+async function uploadFile(file) {
     const formData = new FormData();
     formData.append('file', file);
   
@@ -114,7 +114,7 @@ function openImportBookmarksDialog() {
         if (response.ok) {
             hideLoader()
           window.location.reload();
-          //  console.log('File inviato con successo!');
+         
         } else {
             console.error('Errore durante l\'invio del file:', response.statusText);
         }

@@ -246,8 +246,18 @@ function addCategoryToHTML(category) {
       }
     });
     if (!foundCat) {
+      
+    let index;
+
+    if(categoryJSON.length>0){
+      let ids=categoryJSON.map(cat=>cat.id).sort(function(a, b) {
+        return a - b;})
+      index=ids[ids.length-1];
+    }else{
+      index=0
+    }
       let newElement = {
-        id: categoryJSON[categoryJSON.length - 1].id + 1,
+        id: index + 1,
         name: name,
         urls: [],
         sub_ids: [],
@@ -406,7 +416,10 @@ function addCategoryToHTML(category) {
 
   
 function addSubcategoryToJSON(categoryId, subName) {
-    let subId = categoryJSON[categoryJSON.length - 1].id + 1;
+  let ids=categoryJSON.map(cat=>cat.id).sort(function(a, b) {
+    return a - b;})
+  let index=ids[ids.length-1];
+    let subId = index + 1;
     let subJSON = {
       id: subId,
       name: subName,

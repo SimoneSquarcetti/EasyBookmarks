@@ -45,12 +45,15 @@ function searchCategory(str) {
       Array.from(document.getElementsByClassName("categoryDiv")).forEach(
         (el) => (el.style = "display:inline-block")
       );
+
+      document.getElementById("addCategoryDiv").style="display:flex"
     }
   }
 
   
   
 function searchBookmark(str) {
+  
     let bookmarks = bookmarkArray.filter((url) =>
       url.title.toLowerCase().includes(str.toLowerCase())
     );
@@ -82,5 +85,6 @@ function searchBookmark(str) {
       Array.from(document.getElementsByClassName("categoryDiv")).forEach(
         (el) => (el.style = "display:inline-block")
       );
+      document.getElementById("addCategoryDiv").style="display:flex"
     }
   }
